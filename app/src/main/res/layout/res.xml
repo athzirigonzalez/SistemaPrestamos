@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Sistema Prestamos</string>
+    <string name="nombre_cliente">Nombre completo del cliente</string>
+    <string name="monto">Monto solicitado ($)</string>
+    <string name="plazo_meses">Plazo (meses)</string>
+    <string name="enviar_solicitud">Enviar Solicitud</string>
+    <string name="error_campo_requerido">Este campo es obligatorio</string>
+    <string name="error_monto_invalido">El monto debe estar entre $100 y $50,000</string>
+    <string name="error_plazo_invalido">El plazo debe estar entre 1 y 48 meses</string>
+    <string name="error_verificar_datos">Por favor corrija los errores en el formulario</string>
+    <string name="cuenta_inactiva">Tu cuenta está inactiva. Contacta al administrador.</string>
+</resources>

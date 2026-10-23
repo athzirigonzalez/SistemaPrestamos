@@ -1,6 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_horizontal"
+    android:background="#F5F5F5"> <!-- Fondo gris claro para el dashboard -->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dashboard del Cliente"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Tarjeta de Perfil del Cliente -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="20dp"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/ivDashboardUser"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/cliente"
+            android:contentDescription="Foto del cliente"/>
+
+        <TextView
+            android:id="@+id/tvDashNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Cliente"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cliente Verificado"
+            android:textColor="#4CAF50"/> <!-- Texto Verde -->
+    </LinearLayout>
+
+    <!-- Tarjeta del Préstamo Activo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="20dp"
+        android:elevation="4dp"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resumen de Préstamo Activo"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:id="@+id/tvDashMonto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monto Autorizado: $0.00"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvDashPlazo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plazo: 0 meses"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estado: Al corriente"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#2196F3"/> <!-- Texto Azul -->
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDashVolver"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Regresar al Inicio" />
+
+</LinearLayout>
